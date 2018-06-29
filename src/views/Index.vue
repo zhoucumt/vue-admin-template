@@ -34,6 +34,9 @@
     export default {
         name: 'index',
 
+        created () {
+        },
+
         data() {
             return {
                 isCollapsed: false

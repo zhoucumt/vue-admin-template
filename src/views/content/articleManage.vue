@@ -3,7 +3,15 @@
 </template>
 
 <script>
-    export default {};
+    import {getList} from '@/api/table'
+    export default {
+        name: 'article-manage',
+        created() {
+            getList(this.listQuery).then(response => {
+                console.log('response: ', response);
+            })
+        }
+    };
 </script>
 
 <style scoped lang="stylus">
