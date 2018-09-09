@@ -29,11 +29,11 @@
         },
 
         watch: {
-            options: function (val) {
-                console.log('val:====', val);
-            },
-            '$route': function (to, from) {
-                console.log('to: ', to);
+            'options': {
+                handler: function (value) {
+                    this.createPieChart(this.options);
+                },
+                deep: true
             }
         },
 

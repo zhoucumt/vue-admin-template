@@ -4,7 +4,7 @@
         <div>收入数据 {{income}}</div>
 
         <div>
-            <pie-chart :options.async="pieChartOptions"></pie-chart>
+            <pie-chart :options="pieChartOptions"></pie-chart>
         </div>
     </div>
 </template>
