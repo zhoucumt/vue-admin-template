@@ -17,7 +17,7 @@
         name: 'user-add',
 
         mounted() {
-            console.log(api);
+            console.log('api, ', api);
             this.getIncomeData();
         },
 
