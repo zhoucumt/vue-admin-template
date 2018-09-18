@@ -17,7 +17,7 @@
         name: 'user-add',
 
         mounted() {
-            console.log('api, ', api);
+            console.log('mounted======');
             this.getIncomeData();
         },
 
@@ -57,7 +57,6 @@
             getIncomeData() {
                 api.getIncome({
                 }).then((res) => {
-                    console.log(res);
                     let data = res.data;
 
                     this.income = data.income.value;
@@ -66,7 +65,6 @@
                         value: this.income
                     });
 
-                    console.log('this.pieChartOptions: ', this.pieChartOptions);
                 });
             }
         }

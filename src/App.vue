@@ -1,13 +1,26 @@
 <template>
     <div id="app" class="app-main">
-        <router-view></router-view>
+        <router-view v-if="list"></router-view>
+
+        <router-view v-if="show"></router-view>
     </div>
 </template>
 
 <script>
 
 export default {
-    name: 'App'
+    name: 'App',
+
+    mounted() {
+        this.show = false;
+    },
+
+    data() {
+        return {
+            show: true,
+            list: true
+        }
+    }
 }
 </script>
 
