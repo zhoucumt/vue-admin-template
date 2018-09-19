@@ -2,6 +2,7 @@
     <div class="user-add-page">
         <div>新增用户</div>
         <div>收入数据 {{income}}</div>
+        <div>{{message}}</div>
 
         <div>
             <pie-chart :options="pieChartOptions"></pie-chart>
@@ -16,13 +17,140 @@
     export default {
         name: 'user-add',
 
-        mounted() {
-            console.log('mounted======');
-            this.getIncomeData();
+        beforeCreate() {
+            console.log('beforeCreate 创建前状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
         },
 
+        created() {
+            console.log('created 创建完毕状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
+        },
+
+        activated() {
+            console.log('activated 激活状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
+        },
+
+        deactivated() {
+            console.log('deactivated 激活状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
+        },
+
+        beforeMount() {
+            console.log('beforeMount 挂载前状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
+        },
+
+        mounted() {
+            this.getIncomeData();
+            console.log('mounted 挂载结束状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
+        },
+
+        beforeUpdate() {
+            console.log('beforeUpdate 更新前状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
+        },
+
+        updated() {
+            console.log('updated 更新完成状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
+        },
+
+        beforeDestroy() {
+            console.log('beforeDestroy 销毁前状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
+        },
+
+        destroyed() {
+            console.log('destroyed 销毁完成状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
+        },
+
+
         data() {
+            console.log('data 数据初始化状态===============》');
+            var state = {
+                'el': this.$el,
+                'data': this.$data,
+                'message': this.message
+            };
+            console.log(this.$el);
+            console.log('state====', state);
+            console.log('//////////分割线//////////');
             return {
+                message: 'this is a message',
                 income: '',
 
                 pieChartOptions: {

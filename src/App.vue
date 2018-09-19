@@ -1,8 +1,10 @@
 <template>
     <div id="app" class="app-main">
-        <router-view v-if="list"></router-view>
+        <keep-alive>
+            <router-view></router-view>
+        </keep-alive>
 
-        <router-view v-if="show"></router-view>
+        <!-- <router-view v-if="show"></router-view> -->
     </div>
 </template>
 
@@ -12,13 +14,12 @@ export default {
     name: 'App',
 
     mounted() {
-        this.show = false;
+        // this.show = false;
     },
 
     data() {
         return {
-            show: true,
-            list: true
+            // show: false
         }
     }
 }
