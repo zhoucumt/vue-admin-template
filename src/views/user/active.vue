@@ -3,6 +3,7 @@
     <div>test</div>
     <div>test2</div>
     <div>test3</div>
+    <div>test4</div>
 </template>
 
 <script>
