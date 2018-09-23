@@ -1,5 +1,5 @@
 <template>
-    <div>活跃用户</div>
+    <div class="active-user-page">活跃用户</div>
 </template>
 
 <script>
@@ -7,5 +7,8 @@
 </script>
 
 <style scoped lang="stylus">
-
+    .active-user-page
+        width: 100%
+        height: 800px
+        
 </style>
