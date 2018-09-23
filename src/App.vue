@@ -15,6 +15,7 @@ export default {
 
     mounted() {
         // this.show = false;
+        console.log(this.$route);
     },
 
     data() {
