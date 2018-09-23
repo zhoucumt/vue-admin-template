@@ -1,6 +1,7 @@
 <template>
     <div class="active-user-page">活跃用户</div>
     <div>test</div>
+    <div>test2</div>
 </template>
 
 <script>
