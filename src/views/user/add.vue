@@ -3,6 +3,7 @@
         <div>新增用户</div>
         <div>收入数据 {{income}}</div>
         <div>{{message}}</div>
+        <div>test====</div>
 
         <div>
             <pie-chart :options="pieChartOptions"></pie-chart>
