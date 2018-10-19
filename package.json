@@ -11,8 +11,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "fecs ./src/router/index.js",
-      "pre-push": "fecs ./src/router/index.js"
+      "pre-commit": "fecs ./src/**/*.vue",
+      "pre-push": "fecs ./src/**/*.vue"
     }
   },
   "dependencies": {
