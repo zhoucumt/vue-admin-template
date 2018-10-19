@@ -64,6 +64,14 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.(less|css|js|vue)$/,
+        loader: 'fecs-loader',
+        options: {
+          faileOnError: true,
+          exclude: './build/*.js,./config/*.js,./dist/static/js/*.js,./src/utils/*.js,./src/store/*/*.js,./src/main.js,./src/store/*.js,./src/api/*.js'
+        }
       }
     ]
   },

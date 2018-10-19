@@ -1,9 +1,11 @@
 <template>
-    <div class="active-user-page">活跃用户</div>
-    <div>test</div>
-    <div>test2</div>
-    <div>test3</div>
-    <div>test4</div>
+    <div>
+        <div class="active-user-page">活跃用户</div>
+        <div>test</div>
+        <div>test2</div>
+        <div>test3</div>
+        <div>test4</div>
+    </div>
 </template>
 
 <script>

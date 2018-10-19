@@ -1,4 +1,10 @@
-import Vue from 'vue';
+/**
+ *
+ * @file router文件
+ * @author zhouqinghuaicumt@163.com
+ *
+ */
+import Vue from 'vue'
 import Router from 'vue-router';
 import Index from '@/views/Index';
 import ArticleManage from '@/views/content/articleManage';
@@ -6,7 +12,7 @@ import CommentManage from '@/views/content/commentManage';
 import UserAdd from '@/views/user/add';
 import UserActive from '@/views/user/active';
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
     routes: [
