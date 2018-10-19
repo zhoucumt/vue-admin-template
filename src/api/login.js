@@ -1,3 +1,4 @@
+/* eslint-disable */
 import request from '@/utils/ajax'
 
 export function login(username, password) {

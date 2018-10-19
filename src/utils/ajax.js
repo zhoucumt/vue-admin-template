@@ -1,3 +1,4 @@
+/* eslint-disable */
 import axios from 'axios'
 import { Message, MessageBox } from 'iView'
 import store from '../store'

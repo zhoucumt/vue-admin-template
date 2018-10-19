@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  *
  * @file router文件
@@ -12,7 +13,7 @@ import CommentManage from '@/views/content/commentManage';
 import UserAdd from '@/views/user/add';
 import UserActive from '@/views/user/active';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
     routes: [

@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*
  * @file 首页接口
  * @author zhouqinghuaicumt@163.com
