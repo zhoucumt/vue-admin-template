@@ -7,6 +7,11 @@
 </template>
 
 <script>
+    /**
+     * @file 首页请求方法
+     * @author zhouqinghuaicumt@163.com
+     * @date 2018-11-12
+     */
     import echarts from 'echarts';
 
     export default {
@@ -42,7 +47,7 @@
                 let pieChart = echarts.init(document.getElementById(options.id));
 
                 pieChart.setOption({
-                    backgroundColor:'#fff',
+                    backgroundColor: '#fff',
 
                     title: [
                         {

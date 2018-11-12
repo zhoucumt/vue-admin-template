@@ -4,7 +4,7 @@
  * @author zhouqinghuaicumt@163.com
  *
  */
-import Vue from 'vue'
+import Vue from 'vue';
 import Router from 'vue-router';
 import Index from '@/views/Index';
 import ArticleManage from '@/views/content/articleManage';

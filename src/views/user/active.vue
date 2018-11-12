@@ -13,6 +13,11 @@
 </template>
 
 <script>
+    /**
+     * @file 首页请求方法
+     * @author zhouqinghuaicumt@163.com
+     * @date 2018-11-12
+     */
     export default {
         name: 'active',
 
@@ -33,7 +38,7 @@
         },
 
         // 应用场景：阻止用户进行页面跳转（但是不能阻止用户关闭页面），如有未保存的草稿等等
-        beforeRouteLeave (to, from , next) {
+        beforeRouteLeave(to, from, next) {
             if (this.answer) {
                 next();
             }

@@ -12,6 +12,11 @@
 </template>
 
 <script>
+    /**
+     * @file 首页请求方法
+     * @author zhouqinghuaicumt@163.com
+     * @date 2018-11-12
+     */
     import api from '@/api/index.js';
     import PieChart from '@/components/PieChart';
 
@@ -19,137 +24,137 @@
         name: 'user-add',
 
         beforeCreate() {
-            console.log('beforeCreate 创建前状态===============》');
+            // console.log('beforeCreate 创建前状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
         created() {
-            console.log('created 创建完毕状态===============》');
+            // console.log('created 创建完毕状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
         activated() {
-            console.log('activated 激活状态===============》');
+            // console.log('activated 激活状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
         deactivated() {
-            console.log('deactivated 激活状态===============》');
+            // console.log('deactivated 激活状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
         beforeMount() {
-            console.log('beforeMount 挂载前状态===============》');
+            // console.log('beforeMount 挂载前状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
         mounted() {
             this.getIncomeData();
-            console.log('mounted 挂载结束状态===============》');
+            // console.log('mounted 挂载结束状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
         beforeUpdate() {
-            console.log('beforeUpdate 更新前状态===============》');
+            // console.log('beforeUpdate 更新前状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
         updated() {
-            console.log('updated 更新完成状态===============》');
+            // console.log('updated 更新完成状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
         beforeDestroy() {
-            console.log('beforeDestroy 销毁前状态===============》');
+            // console.log('beforeDestroy 销毁前状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
         destroyed() {
-            console.log('destroyed 销毁完成状态===============》');
+            // console.log('destroyed 销毁完成状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
         },
 
 
         data() {
-            console.log('data 数据初始化状态===============》');
+            // console.log('data 数据初始化状态===============》');
             var state = {
                 'el': this.$el,
                 'data': this.$data,
                 'message': this.message
             };
-            console.log(this.$el);
-            console.log('state====', state);
-            console.log('//////////分割线//////////');
+            // console.log(this.$el);
+            // console.log('state====', state);
+            // console.log('//////////分割线//////////');
             return {
                 message: 'this is a message',
                 income: '',
@@ -169,7 +174,7 @@
                         },
                         {
                             value: 25,
-                            name: "安卓海外"
+                            name: '安卓海外'
                         }
                     ],
                     value: '',
@@ -185,7 +190,7 @@
         methods: {
             getIncomeData() {
                 api.getIncome({
-                }).then((res) => {
+                }).then(res => {
                     let data = res.data;
 
                     this.income = data.income.value;

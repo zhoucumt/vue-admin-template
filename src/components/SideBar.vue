@@ -29,10 +29,15 @@
 </template>
 
 <script>
+    /**
+     * @file 首页请求方法
+     * @author zhouqinghuaicumt@163.com
+     * @date 2018-11-12
+     */
     export default {
         name: 'side-bar',
 
-        data () {
+        data() {
             return {
                 theme: 'dark',
 
@@ -104,35 +109,37 @@
         },
 
         computed: {
-            rotateIcon () {
+            rotateIcon() {
                 return [
                     'menu-icon',
                     this.isCollapsed ? 'rotate-icon' : ''
                 ];
             },
 
-            menuitemClasses () {
+            menuitemClasses() {
                 return [
                     'menu-item',
                     this.isCollapsed ? 'collapsed-menu' : ''
-                ]
+                ];
             }
         },
 
         methods: {
-            collapsedSider () {
+            collapsedSider() {
                 this.$refs.side1.toggleCollapse();
             },
 
             /**
+             *
              * 点击子菜单时触发的逻辑，这里子组件只抛一个事件，具体逻辑由父组件实现
+             *
              * @param  {string} active 事件参数
              */
             changeMenu(active) {
                 this.$emit('on-change', active);
             }
         }
-    }
+    };
 </script>
 
 <style scoped lang="stylus">

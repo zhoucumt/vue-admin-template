@@ -9,21 +9,25 @@
 </template>
 
 <script>
-
+/**
+ * @file 首页请求方法
+ * @author zhouqinghuaicumt@163.com
+ * @date 2018-11-12
+ */
 export default {
     name: 'App',
 
     mounted() {
         // this.show = false;
-        console.log(this.$route);
+        // console.log(this.$route);
     },
 
     data() {
         return {
             // show: false
-        }
+        };
     }
-}
+};
 </script>
 
 <style lang="stylus">

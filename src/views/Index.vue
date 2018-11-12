@@ -28,13 +28,18 @@
 </template>
 
 <script>
+    /**
+     * @file 首页请求方法
+     * @author zhouqinghuaicumt@163.com
+     * @date 2018-11-12
+     */
     import SideBar from '@/components/SideBar';
     import HeaderNav from '@/components/HeaderNav';
 
     export default {
         name: 'index',
 
-        created () {
+        created() {
         },
 
         data() {
@@ -59,7 +64,7 @@
                 this.$router.push(val);
             }
         }
-    }
+    };
 </script>
 
 <style lang="stylus">
