@@ -1,17 +1,24 @@
-/*
- * @file 首页接口
- * @author zhouqinghuaicumt@163.com
- *
+/* eslint-disable */
+/**
+ * @file 首页请求方法
+ * @authour zhouqinghuaicumt@163.com
+ * @date 2018-11-12
  */
 
-import request from '@/utils/ajax'
+import request from '@/utils/ajax';
 
 export default {
-    getIncome(params) {
-        return request({
-            url: '/get-income',
+    /**
+     * 首页：基础数据
+     *
+     * @param {Object} params 参数信息
+     * @return {Object} obj response信息
+     */
+    getBasicData(params) {
+        return request.request({
+            url: '/get-project-info',
             method: 'get',
             params
         });
     }
-}
+};
