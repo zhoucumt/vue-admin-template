@@ -1,4 +1,3 @@
-/* eslint-disable */
 /**
  *
  * @file router文件

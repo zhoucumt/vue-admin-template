@@ -1,0 +1,8 @@
+{
+    "files": ["./src/**/*.vue", "./src/**/*.js"],
+    "eslint": {
+        "rules": {
+            "fecs-esnext-ext": "off"
+        }
+    }
+}

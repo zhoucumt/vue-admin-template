@@ -1,3 +1,9 @@
+/**
+ *
+ * @file header
+ * @author zhouqinghuaicumt@163.com
+ *
+ */
 <template>
     <div class="main-header">
         <div class="navicon-con">
@@ -31,27 +37,27 @@
         },
 
         computed: {
-            rotateIcon () {
+            rotateIcon() {
                 return [
                     'menu-icon',
                     this.isCollapsed ? 'rotate-icon' : ''
                 ];
             },
 
-            menuitemClasses () {
+            menuitemClasses() {
                 return [
                     'menu-item',
                     this.isCollapsed ? 'collapsed-menu' : ''
-                ]
+                ];
             }
         },
 
         methods: {
-            toggleSideBar () {
+            toggleSideBar() {
                 this.$emit('toggleSideBar', {});
             }
         }
-    }
+    };
 </script>
 
 <style scoped lang="stylus">
