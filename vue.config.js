@@ -6,7 +6,7 @@ module.exports = {
     outputDir: 'dist',
 
     // eslint-loader 是否在保存的时候检查
-    lintOnSave: true,
+    lintOnSave: false,
 
     // use the full build with in-browser compiler?
     // https://vuejs.org/v2/guide/installation.html#Runtime-Compiler-vs-Runtime-only
@@ -16,7 +16,7 @@ module.exports = {
     // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
     chainWebpack:  config => {
         config.entry('index').add('babel-polyfill');
-    }
+    },
 
 
     configureWebpack: () => {},
