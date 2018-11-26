@@ -1,11 +1,10 @@
-/* eslint-disable */
-/*
+/**
  * @file 首页接口
  * @author zhouqinghuaicumt@163.com
  *
  */
 
-import request from '@/utils/ajax'
+import request from '@/utils/ajax';
 
 
 
@@ -17,4 +16,4 @@ export default {
             params
         });
     }
-}
+};
