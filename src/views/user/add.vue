@@ -2,6 +2,9 @@
     <div class="user-add-page">
         <div>新增用户</div>
         <div>收入数据 {{income}}</div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-phone"></use>
+        </svg>
         <div>{{message}}</div>
 
         <div>
