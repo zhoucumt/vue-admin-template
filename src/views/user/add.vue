@@ -1,6 +1,6 @@
 <template>
     <div class="user-add-page">
-        <div>新增用户</div>
+        <div @click="handleClick($event)" data-id="test">新增用户</div>
         <div>收入数据 {{income}}</div>
         <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-phone"></use>
@@ -197,6 +197,11 @@
                     });
 
                 });
+            },
+
+            handleClick(e) {
+                console.log(e);
+                console.log(e.srcElement.dataset.id);
             }
         }
     };
