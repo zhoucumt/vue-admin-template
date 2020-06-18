@@ -1,59 +1,29 @@
 import Vue from 'vue';
-import Router from 'vue-router';
-import Index from '@/views/Index';
-import ArticleManage from '@/views/content/articleManage';
-import CommentManage from '@/views/content/commentManage';
-import UserAdd from '@/views/user/add';
-import UserActive from '@/views/user/active';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
-export default new Router({
-    routes: [
-        {
-            path: '/',
-            name: 'index',
-            component: Index
-        },
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+  },
+  {
+    path: '/about',
+    name: 'About',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+  },
+];
 
-        // 内容管理模块
-        {
-            path: '/content',
-            name: 'article-manage',
-            component: Index,
-            children: [
-                {
-                    path: 'articleManage',
-                    name: 'article-manage',
-                    component: ArticleManage
-                },
-
-                {
-                    path: 'commentManage',
-                    name: 'comment-manage',
-                    component: CommentManage
-                }
-            ]
-        },
-
-        // 用户管理模块
-        {
-            path: '/user',
-            name: 'article-manage',
-            component: Index,
-            children: [
-                {
-                    path: 'add',
-                    name: 'user-add',
-                    component: UserAdd
-                },
-
-                {
-                    path: 'active',
-                    name: 'user-active',
-                    component: UserActive
-                }
-            ]
-        }
-    ]
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes,
 });
+
+export default router;
