@@ -49,6 +49,9 @@ function setLines(el, binding) {
 }
 
 export default {
+  bind(el) {
+    console.log('el: ', el);
+  },
   inserted(el, binding, vnode) {
     setLines(el, binding, vnode);
   },
