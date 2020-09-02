@@ -15,11 +15,16 @@
 
     <custom-overlay :visible.sync="visible" />
     <el-button type="primary" @click="doOpenSync">打开syncDialog</el-button>
+    <h2>{{count}}</h2>
+    <h2>{{countAlias}}</h2>
+    <h2>{{countPlusLocalState}}</h2>
+    <el-button type="primary" @click="handleCount">改变count</el-button>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import { mapState } from 'vuex';
 import HelloWorld from '@/components/HelloWorld.vue';
 import CustomDialog from '@/components/CustomDialog.vue';
 import SyncDialog from '@/components/SyncDialog.vue';
@@ -33,15 +38,30 @@ export default {
     'custom-overlay': SyncDialog,
   },
 
+  computed: mapState({
+    count: (state) => state.count,
+    countAlias: 'count',
+    countPlusLocalState(state) {
+      return state.count + this.localCount;
+    },
+  }),
+
   data() {
     return {
       name2: 'about',
       visibleDialog: false,
       visible: false,
+      localCount: 1,
     };
   },
 
   methods: {
+    // 改变store count
+    handleCount() {
+      console.log('aa');
+      this.$store.commit('increment');
+      // this.countPlusLocalState();
+    },
     handleConfirm() {
       console.log('confirm');
       this.visibleDialog = false;
