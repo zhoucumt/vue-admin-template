@@ -18,6 +18,8 @@
     <h2>{{count}}</h2>
     <h2>{{countAlias}}</h2>
     <h2>{{countPlusLocalState}}</h2>
+    <h2>{{number}}</h2>
+    <h2>{{name}}</h2>
     <el-button type="primary" @click="handleCount">改变count</el-button>
   </div>
 </template>
@@ -44,6 +46,8 @@ export default {
     countPlusLocalState(state) {
       return state.count + this.localCount;
     },
+    number: 2, // 不会显示
+    name: 'name',
   }),
 
   data() {
